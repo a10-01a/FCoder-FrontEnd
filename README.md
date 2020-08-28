@@ -17,8 +17,9 @@ To start server
 ```
 npm start
 ```
-##Things needed to know
-The app use __[pm2]__(https://pm2.keymetrics.io/docs/usage/quick-start/) as a live server so that you don't need to start server every time you make changes on the files.
+
+## Things needed to know
+The app use __[pm2](https://pm2.keymetrics.io/docs/usage/quick-start/)__ as a live server so that you don't need to start server every time you make changes on the files.
 To kill all of the __pm2__'s server, use the command
 ```
 pm2 kill
