@@ -1,5 +1,4 @@
 const express = require('express');
-const people = require('./people.json');
 
 const app = express();
 
