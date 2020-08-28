@@ -30,7 +30,15 @@ nav {
 }
 
 nav a {
+    color: #9647ba;
     text-decoration: none;
+}
+nav a:hover {
+    font-weight: bolder;
+}
+
+a:visited {
+    color: #9647ba;
 }
 
 .body-img {
