@@ -13,9 +13,17 @@ Before running server, you need to install all the dependencies
 ```
 npm install
 ```
-
-
 To start server
 ```
 npm start
+```
+##Things needed to know
+The app use __[pm2]__(https://pm2.keymetrics.io/docs/usage/quick-start/) as a live server so that you don't need to start server every time you make changes on the files.
+To kill all of the __pm2__'s server, use the command
+```
+pm2 kill
+```
+or
+```
+pm2 kill [appId or appName]
 ```
