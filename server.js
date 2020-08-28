@@ -1,17 +1,20 @@
-const express = require('express'),
-	bodyParser = require('body-parser');
+const express = require('express');
+const people = require('./people.json');
 
-const server = express();
+const app = express();
 
-server.set("views", __dirname + "/views");
-
-server.use(express.static(__dirname + "/views"));
-server.use(bodyParser.urlencoded({ extended : true }));
-
-server.get("/", (_, res) => {
-	res.render("home.html");
+const server = app.listen(8000, () => {
+    console.log(`Express running → PORT ${server.address().port}`);
 });
 
-server.listen (3000, function(){
-	console.log('Running server');
+app.set('view engine', 'pug');
+
+// serve static files from folder "public"
+app.use(express.static(__dirname + '/public'));
+
+app.get('/', (req, res) => {
+    res.render('index', {
+        title: 'FCoder | Homepage',
+        people: people.profiles
+    });
 });

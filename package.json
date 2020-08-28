@@ -1,16 +1,19 @@
 {
   "name": "fe-fc",
   "version": "1.0.0",
-  "description": "Front end for FCoder web",
-  "main": "server.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "npx pm2 start server.js --watch"
   },
-  "author": "airport",
+  "author": "FCoder",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "expressjs": "^1.0.1"
+    "express": "^4.16.3",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "pm2": "^4.4.1"
   }
 }
