@@ -16,3 +16,16 @@ app.get('/', (req, res) => {
         title: 'FCoder | Homepage',
     });
 });
+
+app.get('/login', (req, res) => {
+    res.render('login', {
+        title: "FCoder | Login",
+    })
+});
+
+app.get('/resgister', (req, res) => {
+    res.render('register', {
+        title: "FCoder | Register",
+    })
+});
+
