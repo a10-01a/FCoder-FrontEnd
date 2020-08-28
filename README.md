@@ -4,14 +4,17 @@ Make sure you have installed all the dependencies.
 
 ## Get strated
 You need to clone the project, using the code below
-```git clone https://github.com/a10-01a/FCoder-FrontEnd```
+```
+git clone https://github.com/a10-01a/FCoder-FrontEnd
+```
 
 ## Before you start
-Before start server, you need to
+Before running server, you need to install all the dependencies
 ```
 npm install
 ```
-So that, npm will install dependecies packages in your local machine.
+
+
 To start server
 ```
 npm start
