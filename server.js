@@ -17,6 +17,14 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/profile', (req, res) => {
+    var userName = req.query.name;
+    res.render('profile', {
+        title : userName + " | FCoder",
+        name : userName,
+    });
+});
+
 app.get('/login', (req, res) => {
     res.render('login', {
         title: "FCoder | Login",
