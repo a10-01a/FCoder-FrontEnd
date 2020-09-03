@@ -11,11 +11,6 @@ h1, h2 {
     text-align: center;
 }
 
-h1 {
-    
-    font-weight: bold !important;
-}
-
 nav {
     font-family: 'Nunito', sans-serif;
     position: fixed;
@@ -23,11 +18,15 @@ nav {
     left: 0;
     width: 100vw;
     padding: 20px;
-    display: inline-flex;
-    justify-content: space-around;
+    display: flex;
+    justify-content: stretch;
     background-color: white;
     font-size: 18px;
     font-weight: bold;
+}
+
+a:visited {
+    color: #9647ba;
 }
 
 nav a {
@@ -35,26 +34,38 @@ nav a {
     text-decoration: none;
 }
 
-a:visited {
-    color: #9647ba;
+nav .nav-logo {
+    width: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .nav-options {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .space {
+    width: 42%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .login-register {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .body-img {
-    display: inline-block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 20%;
     height: 20%;
     padding-top: 10%;
-    padding-bottom: 25%;
-}
-.nav-logo {
-    display: inline-block;
-}
-
-.logo {
-    width: 15%;
-    height: auto;
+    margin-bottom: 25%;
 }
 
 .login-btn,
@@ -88,8 +99,8 @@ a:visited {
 }
 
 .about-container {
-    width: 50% !important;
-    padding: 20px;
+    width: 75%;
+    margin: 20px auto 20px auto;
     background-color:rgba(255, 255, 255, 0.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
