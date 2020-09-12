@@ -1,5 +1,5 @@
 # FCoder's Web FrontEnd
-This project is using __[NodeJS](https://nodejs.org/en/)__ with __[ExpressJS](http://expressjs.com/)__ framework and __[PUG](https://pugjs.org/api/getting-started.html)__ template.
+This project is using __[NodeJS](https://nodejs.org/en/)__ with __[ExpressJS](http://expressjs.com/)__ framework and __EJS__ template.
 Make sure you have installed all the dependencies.
 
 ## First step
